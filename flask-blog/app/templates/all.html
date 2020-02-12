@@ -1,5 +1,6 @@
 {% block content %}
+    <h1>Drew's All page</h1>
     {% for var_page in var_pages %}
-        <a href= "/{{var_page}}">{{var_page}}</a>
+        <li><a href= "/{{var_page}}">{{var_page}}</a></li>
     {% endfor %}
 {% endblock content %}
