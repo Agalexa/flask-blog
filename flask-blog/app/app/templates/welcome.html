@@ -1,0 +1,10 @@
+<h1>Welcome to my Flask app</h1>
+<p>To visit the homepage click</p> <a href='/home'>here</a>
+<p>To login click</p> <a href="/login">here</a>
+<p>To visit the all page click</p> <a href='/all'>here</a>
+<p></p>
+{% block content %}
+{% for message in get_flashed_messages() %}
+    {{ message}}
+{% endfor %}
+{% endblock content %}
