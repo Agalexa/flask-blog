@@ -1,0 +1,9 @@
+{% block content %}
+    <h1>Drew's All page</h1>
+    {% for var_page in var_pages %}
+        <li><a href= "/{{var_page}}">{{var_page}}</a></li>
+    {% endfor %}
+    {% for message in get_flashed_messages() %}
+    {{ message}}
+{% endfor %}
+{% endblock content %}
